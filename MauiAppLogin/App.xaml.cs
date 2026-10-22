@@ -11,7 +11,13 @@ namespace MauiAppLogin
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            var window = base.CreateWindow(activationState);
+
+            window.Width = 400;
+            window.Height = 600;
+
+            return window;
         }
-    }
-}
+    }//fecha classe
+
+}//fecha namespace
